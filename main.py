@@ -1,7 +1,7 @@
 import random
 
 # wybiera liczbę do zgadnięcia i przypisuje ją do to_guess
-to_guess = random.randint(0, 100)
+to_guess = random.randint(1, 10)
 
 # zawsze wykona to, co w pętli
 while True:
@@ -9,7 +9,7 @@ while True:
     # 2. Wczyta z konsoli to, co użytkownik wpisze z klawiatury
     # 3. To, co przyszło z klawiatury, jest stringiem (napisem). Trzeba to zamienić na int
     # 4. Przypisuje wynik tych operacji do zmiennej answer
-    answer = int(input("Please provide number: "))
+    answer = int(input("Please provide number between 1 and 10: "))
     # porównuje wartość zmiennej answer z to_guess
     # jeśli jest równy to
     if answer == to_guess:
